@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST APP - Theme 01</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <div class="todo-app">
+        <h1 class="todo-app__heading">Todo List App</h1>
+        <div class="todo-app__input">
+          <input class="todo-app__value" placeholder="Add a new task..." />
+          <button class="todo-app__btn">
+            <i class="fa fa-plus-circle"></i>
+          </button>
+        </div>
+        <div class="todo-app__filters">
+          <div class="todo-app__filter filter" data-filter="completed">
+            Complete
+          </div>
+          <div class="todo-app__filter filter" data-filter="pending">
+            Incomplete
+          </div>
+          <div class="todo-app__delete delete-all">Delete All</div>
+        </div>
+        <div class="todo-app__container">
+          <ul class="todo-app__list todos"></ul>
+          <img class="todo-app__empty empty-image" src="./image/empty.svg" />
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

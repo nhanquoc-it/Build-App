@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*=================== RESET CSS ===================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+/*=================== TODO LIST APP CSS ===================*/
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #153677, #4e085f);
+	padding: 10px;
+}
+.todo-app {
+	width: 100%;
+	max-width: 540px;
+	background: #fff;
+	margin: 100px auto 20px;
+	padding: 40px 30px 70px;
+	border-radius: 10px;
+}
+.todo-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.todo-heading {
+	color: #002765;
+}
+.todo-icon {
+	width: 40px;
+	height: 40px;
+}
+.todo-input {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #edeef0;
+	border-radius: 30px;
+	padding-left: 20px;
+	margin-bottom: 25px;
+}
+#inputValue {
+	border: none;
+	outline: none;
+	flex: 1;
+	background: transparent;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.add-btn {
+	border: none;
+	outline: none;
+	padding: 16px 50px;
+	background: #ff5945;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 40px;
+	cursor: pointer;
+}
+#todo-list {
+	list-style-type: none;
+}
+.todo-item {
+	font-size: 17px;
+	padding: 12px 8px 12px 50px;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+.todo-item::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 8px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-image: url(./images/uncheck.png);
+	background-size: cover;
+	background-position: center;
+}
+.todo-item.checked {
+	color: #555;
+	text-decoration: line-through;
+}
+.todo-item.checked::before {
+	background-image: url(./images/check.png);
+}
+.close-btn {
+	position: absolute;
+	right: 0;
+	top: 8px;
+	width: 20px;
+	height: 20px;
+	font-size: 22px;
+	color: #555;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+.close-btn img {
+	width: 100%;
+}
