@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Build Notes App - Theme 02</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main id="app">
+			<div class="container">
+				<section class="container-heading">
+					<img class="note-img" src="./images/notes.png" alt="Notes" />
+					<h1 class="note-heading">Ứng dụng Ghi chú</h1>
+				</section>
+
+				<section class="container-content">
+					<textarea id="noteInput" placeholder="Nhập ghi chú mới..."></textarea>
+					<button class="btn add-btn" onclick="addNote()">
+						<img class="note-icon" src="./images/add.png" alt="Add" /> Thêm Ghi
+						chú
+					</button>
+				</section>
+				<ul id="noteList"></ul>
+			</div>
+		</main>
+	</body>
+	<script src="./app.js"></script>
+</html>

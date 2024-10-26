@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Build Note App - Theme 01</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main id="app-container">
+			<section class="note-app">
+				<form id="noteForm">
+					<h1 class="note-heading">Notes App</h1>
+					<input type="hidden" id="noteId" />
+					<input
+						type="text"
+						id="title"
+						placeholder="Tiêu đề ghi chú"
+						required
+					/>
+					<textarea
+						id="content"
+						placeholder="Nội dung ghi chú"
+						required
+					></textarea>
+					<button class="add-note" type="submit">Thêm Ghi Chú</button>
+				</form>
+
+				<ul id="noteList">
+					<!-- <li class="note-item">
+						<div class="note-content">
+							<strong>Tiêu đề</strong>
+							<p>Nội dung</p>
+						</div>
+						<button class="btn edit-note" data-id="${note.id}">Sửa</button>
+						<button class="btn delete-note" data-id="${note.id}">Xóa</button>
+					</li> -->
+				</ul>
+			</section>
+		</main>
+		<script src="./app.js"></script>
+	</body>
+</html>
